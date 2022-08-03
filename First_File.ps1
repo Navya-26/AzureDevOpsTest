@@ -25,13 +25,16 @@ Else
 {
 Exit
 }
+Write-Host $branch
 git init
+Write-Host "1"
+ls
 git checkout $branch
 git pull
-
+Write-Host "2"
 
 git add .
-# git config --global user.email "Any email id"
-# git config --global user.name "Any user name"
+git config user.email "navya.26.02.00@gmil.com"
+git config user.name "Navya"
 git commit -am "commit message [ci skip]"
 git push --set-upstream origin $branch
