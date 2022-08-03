@@ -26,11 +26,12 @@ Else
 Exit
 }
 Write-Host $branch
-git init
+# git init
 Write-Host "1"
 ls
 git checkout $branch
-git pull
+# git pull
+ls
 Write-Host "2"
 
 git add .
