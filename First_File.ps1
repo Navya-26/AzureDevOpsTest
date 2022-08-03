@@ -1,18 +1,10 @@
 Write-Host "Hi"
 $Table = @()
-$Record = @{
-   "Role Name" = ""
-   "Owner" = ""
-   "Group Name" = ""
-}
-$Record."Group Name"="1"
-$Record."Owner"="2"
-$Record."Role Name"="3"
+$Record = @{"Role" = ""}
+$Record."Role"="3"
 $objRecord = New-Object PSObject -property $Record
 $Table += $objrecord
-$Record."Group Name"="4"
-$Record."Owner"="5"
-$Record."Role Name"="6"
+$Record."Role"="6"
 $objRecord = New-Object PSObject -property $Record
 $Table += $objrecord
 
