@@ -25,7 +25,7 @@ Else
 {
 Exit
 }
-
+git init
 git checkout $branch
 git pull
 
