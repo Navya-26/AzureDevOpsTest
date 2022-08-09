@@ -34,6 +34,6 @@ git checkout $branch
 
 git add .
 git config user.email $env:RELEASE_REQUESTEDFOREMAIL
-git config user.name $(Build.RequestedFor)
+git config user.name $env:BUILD_REQUESTEDFOR
 git commit -am "Added $($FileName)"
 git push --set-upstream origin $branch
