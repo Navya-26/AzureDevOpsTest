@@ -33,7 +33,7 @@ git checkout $branch
 
 
 git add .
-git config user.email "navya.26.02.00@gmail.com"
-git config user.name "Navya"
+git config user.email $env:RELEASE_REQUESTEDFOREMAIL
+git config user.name $(Build.RequestedFor)
 git commit -am "Added $($FileName)"
 git push --set-upstream origin $branch
