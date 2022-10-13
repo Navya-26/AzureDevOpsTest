@@ -12,7 +12,7 @@ cd $primaryAlias
 cd drop
 $current_date = $(get-date -f yyyy-MM-dd)
 $filename = "table_AD_$($current_date).csv"
-$Table | export-csv $filename -NoTypeInformation
+$Table | export-csv $filename -NoTypeInformation -Append
 
 if($env:SYSTEM_PULLREQUEST_SOURCEBRANCH)
 {
