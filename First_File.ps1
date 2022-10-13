@@ -29,7 +29,7 @@ Exit
 git init
 
 git checkout $branch
-# git pull
+git pull
 
 
 git add .
